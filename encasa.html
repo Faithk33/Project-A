@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Encasa</title>
+    <style>
+      body {
+        background: hsl(194, 9%, 39%);
+        margin: 15%;
+      }
+      header {
+        text-align: center;
+        text-decoration: underline;
+        background-color: #d1cebd;
+        font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+          "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+      }
+      h1 {
+        line-height: normal;
+        text-align: center;
+        color: #f2f9f1;
+        font-family: "Times New Roman", Times, serif;
+        font-weight: bold;
+      }
+      h2 {
+        text-align: center;
+        color: #f2f9f1;
+        font-family: "Times New Roman", Times, serif;
+      }
+      h3 {
+        text-decoration: underline;
+        font-weight: lighter;
+        font-size: 17px;
+        text-align: center;
+        color: black;
+        font-family: "Times New Roman", Times, serif;
+        line-height: 15px;
+      }
+      div {
+        background-color: #d1cebd;
+      }
+      p {
+        background-color: #dfcdc3;
+        text-align: center;
+        color: black;
+        font-family: "Times New Roman", Times, serif;
+        border-radius: 20;
+        font-style: italic;
+        font-size: 20;
+        font-weight: lighter;
+        border: 2px solid #dfcdc3;
+      }
+      footer {
+        text-align: center;
+        color: #f2f9f1;
+        font-family: "Times New Roman", Times, serif;
+        background: linear-gradient(to right, #d9dfd8, #b9aca5);
+      }
+      img {
+        border-radius: 15px;
+        width: 260px;
+        height: 260px;
+        padding: auto;
+        margin: 25px;
+      }
+      button {
+        display: block;
+        font-size: 15px;
+        background-color: #dfcdc3;
+        color: black;
+        font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+          "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+        margin: auto;
+        padding: 10px;
+        border: 5px;
+        border-radius: 15px;
+        transition: all 200ms ease-in-out;
+        box-shadow: #b6a79f;
+        cursor: pointer;
+      }
+      button:hover {
+        color: black;
+        background-color: white;
+      }
+      a:hover {
+        text-decoration: underline;
+        color: #b9aca5;
+      }
+      a {
+        display: block;
+        margin: auto;
+        text-align: center;
+        color: black;
+      }
+    </style>
+  </head>
+  <body>
+    <header>15% off shipping for purchases over $500</header>
+    <hr />
+    <h1>Encasa</h1>
+    <h2>Interior Decor</h2>
+    <p>
+      “Furniture is needed for practical reasons, and because it must be there,
+      it may as well be as pleasant as possible to look at, and in a less
+      definable psychological way, comforting to the spirit.” – Edward J Wormley
+    </p>
+    <section>
+      <h3>Featured products</h3>
+      <div>
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXuIkcwCf3ubGWT0A30y_FdiH_gWN8het7sQ&usqp=CAU"
+          alt="Gray modern sofa"
+        />
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQskD1sSrt2C-AW5uJS7O1xVwcIsBG_ma83Fw&usqp=CAU"
+          alt="modern lighting"
+        />
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3DRtANlff3Mq_KD6psFI8KIpjX7uvKeSu8w&usqp=CAU"
+          alt="Modern abstract painting"
+        />
+      </div>
+    </section>
+    <hr />
+    <p>Get updates</p>
+    <button>Sign Up</button>
+    <a
+      href="https://www.deskera.com/blog/furniture-manufacturing-process-how-furniture-is-made/"
+      target="_blank"
+      >Learn about our customisation process</a
+    >
+    <hr />
+    <p>For inquiries<span>Email: interior.help@encasa.com</span></p>
+    <br />
+    <footer>
+      This website was created by <strong><em>Lethabo Kekana</em></strong>
+    </footer>
+    <script>
+      function signUp() {
+        let fullName = prompt("Please enter your full name");
+        let contactEmail = prompt("Please enter your email");
+
+        if (fullName.length < 5) {
+          alert("Your name is too short (max 5 characters)");
+        } else {
+          alert("Thank you " + fullName + "! We'll contact you soon.");
+        }
+      }
+
+      let signButton = document.querySelector("button");
+      signButton.addEventListener("click", signUp);
+    </script>
+  </body>
+</html>
